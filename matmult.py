@@ -4,19 +4,23 @@ import random
 N = 250
 
 # NxN matrix
+# Most time consuming function
 @profile
 def nxn(N):
     for i in range(N):
         X = []
-        X.append([random.randint(0,100) for r in range(N)])
+        #X.append([random.randint(0,100) for r in range(N)])
+        X.append(random.sample(range(1,100),N))
         return X
 
 # Nx(N+1) matrix
+# Most time consuming function
 @profile
 def nxn1(N):
     for i in range(N):
         Y = []
-        Y.append([random.randint(0,100) for r in range(N+1)])
+        #Y.append([random.randint(0,100) for r in range(N+1)])
+        Y.append(random.sample(range(1,100),N+1))
         return Y
 
 # result is Nx(N+1), it is only the shape of the resulting matrix
