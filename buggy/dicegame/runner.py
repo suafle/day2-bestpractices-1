@@ -54,7 +54,7 @@ class GameRunner:
 
             prompt = input("Would you like to play again?[Y/n]: ")
 
-            if prompt == 'y' or prompt == '':
+            if prompt == 'y' or prompt == 'Y':
                 continue
             else:
                 i_just_throw_an_exception()
