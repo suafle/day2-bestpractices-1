@@ -56,5 +56,7 @@ class GameRunner:
 
             if prompt == 'y' or prompt == 'Y':
                 continue
+            elif prompt == 'N' or prompt == 'n':
+                break
             else:
                 i_just_throw_an_exception()
